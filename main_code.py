@@ -2,7 +2,7 @@ from flask import Flask, jsonify, request
 import csv
 
 all_movies= []
-with open('all_movies.csv') as f:
+with open('movies.csv') as f:
     reader= csv.reader(f)
     data= list(reader)
     all_movies= data[1:]
